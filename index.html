@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MuddleEmUp - Training Session Group Generator</title>
+
+    <!-- Bootswatch Litera Theme -->
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/litera/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="/styles-fd1ce47b7bba1c49.css" integrity="sha384-PuwbpbgLgRWUufWtBeqhROdiS/Jj8SZWbUTmYXAw/RPBEoa7gORwB5fGC64lDJiY"/>
+<link rel="modulepreload" href="/muddle_em_up_web-6f8c5304855ce0a0.js" crossorigin="anonymous" integrity="sha384-J2R0PEMh0vG4WRcLq9i1eIxc7KzDRIFbSPkBGPJy3ul49tPSqo2hew0xHrvq3Ilg"><link rel="preload" href="/muddle_em_up_web-6f8c5304855ce0a0_bg.wasm" crossorigin="anonymous" integrity="sha384-HJFcrqMiBE0Bf0+Onj9NmlvmqgzG12z83/ZOJiPcpnao5dmeySOcYdh4bLtFwhfS" as="fetch" type="application/wasm"></head>
+<body>
+    <div id="app"></div>
+
+    <!-- Bootstrap 5.3 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<script type="module">
+import init, * as bindings from '/muddle_em_up_web-6f8c5304855ce0a0.js';
+const wasm = await init({ module_or_path: '/muddle_em_up_web-6f8c5304855ce0a0_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
