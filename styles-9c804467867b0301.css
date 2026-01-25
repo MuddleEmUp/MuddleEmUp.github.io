@@ -31,11 +31,11 @@
     --shadow-xl: 0px 8px 48px rgba(89, 85, 101, 0.3);
 
     /* Border Radius */
-    --radius-sm: 4px;
-    --radius-md: 6px;
-    --radius-lg: 8px;
-    --radius-xl: 12px;
-    --radius-pill: 31px;
+    --radius-sm: 0;
+    --radius-md: 0;
+    --radius-lg: 0;
+    --radius-xl: 0;
+    --radius-pill: 0;
 }
 
 * {
