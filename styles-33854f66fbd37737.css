@@ -398,6 +398,15 @@ ul {
     color: var(--accent);
 }
 
+.action-card.drag-over {
+    border-color: var(--accent);
+    background: var(--success-bg);
+}
+
+.action-card.drag-over .card-icon {
+    color: var(--accent);
+}
+
 /* ===== Buttons ===== */
 .btn {
     display: inline-flex;
